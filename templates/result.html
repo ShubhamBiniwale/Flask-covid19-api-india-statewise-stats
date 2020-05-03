@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container card my-5 border-5" style="width: 18rem;border: 5px solid blue;">
+  <img class="card-img-top my-3" src="/static/images/covid.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<hr/>
+    <h5 class="card-title">State : {{ data[0] }}</h5>
+    <h5 class="card-title">Confirmed cases : {{ data[1] }}</h5>
+    <h5 class="card-title">Deaths : {{ data[2] }}</h5>
+    <h5 class="card-title">Recovered : {{ data[3] }}</h5>
+  </div>
+</div>
+{% endblock %}
